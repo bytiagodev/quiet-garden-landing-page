@@ -129,35 +129,41 @@ body {
     text-align: center;
 }
 
-.feature img {
+.feature-img-wrapper {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.feature-img-wrapper:hover {
+    transform: translateY(-1.5px);
+    filter: drop-shadow(0 0 12px rgba(216, 151, 170, 0.5))
+}
+
+.feature-img-wrapper img {
+    display: block;
     width: 100%;
     max-width: 250px;
     height: auto;
-    margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 12px rgba(123, 160, 100, 0.35);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.feature img:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 18px rgba(123, 160, 100, 0.55);
-}
 
 .feature h2 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 1.6rem;
-    margin-bottom: 0.75rem;
-    color: #4a4a4a;;
     font-weight: 400;
+    color: #4a4a4a;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 0.75rem;
 }
 
 .feature p {
     font-family: Trebuchet MS, sans-serif;
     font-size: 1.05rem;
-    line-height: 1.5rem;
     color: #666666;
+    line-height: 1.5rem;
 }
 
 @media (max-width: 768px) {
