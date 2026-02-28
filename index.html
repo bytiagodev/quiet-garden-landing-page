@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiet Garden</title>
+    <title>Quiet Garden | Where Serenity Grows</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav class="navbar-center">
-            <ul class="nav-links left">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
+            <ul class="nav-links">
+                <li><a href="#hero">Sanctuary</a></li>
+                <li><a href="#features">The Seedlings</a></li>
+                <li><a href="#seasonal-bloom">The Bloom</a></li>
             </ul>
 
             <div class="logo">
                 <img src="logo.png" alt="Quiet Garden Logo">
             </div>
 
-            <ul class="nav-links right">
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">The Roots</a></li>
+                <li><a href="#journal">Field Observations</a></li>
+                <li><a href="#newsletter">Seeds of Thought</a></li>
             </ul>
         </nav>
     </header>
@@ -30,60 +34,141 @@
             <img src="shop.png" alt="Quiet Garden Storefront" class="hero-img">
             <div class="hero-content">
                 <h1 class="hero-title">Quiet Garden</h1>
-                <p class="hero-text">Where serenity grows</p>
+                <p class="hero-text">WHERE SERENITY GROWS</p>
+                <a href="#features" class="btn-primary">Explore the Garden</a>
             </div>
         </section>
 
-        <section class="features" id="features">
-            <div class="feature">
-                <div class="feature-img-wrapper">
-                    <img src="flower.png" alt="Tiny Plants">
-                </div>
-                <div class="feature-content">
-                    <h2>Tiny Plants</h2>
-                    <p>Small decorative pots, perfect for any corner of your home.</p>
-                </div>
+        <section class="features-section" id="features">
+            <div class="section-intro">
+                <p class="subtitle">Hand-picked Treasures</p>
             </div>
+            
+            <div class="bento-grid">
+                <div class="feature bento-item-large blob-1">
+                    <div class="feature-content">
+                        <h2>Tiny Plants</h2>
+                        <p>Small decorative pots for quiet corners.</p>
+                    </div>
+                    <img src="tiny plants.png" alt="Tiny Plants" class="bento-mini-img">
+                </div>
 
-            <div class="feature">
-                <div class="feature-img-wrapper">
-                    <img src="DIY.png" alt="DIY Gardening Kit">
+                <div class="feature pink-wash blob-2">
+                    <div class="feature-content">
+                        <h2>DIY Kits</h2>
+                        <p>Nurture from seed to bloom.</p>
+                    </div>
+                    <img src="diy gardening kits.png" alt="DIY Kit" class="bento-mini-img">
                 </div>
-                <div class="feature-content">
-                    <h2>DIY Gardening Kit</h2>
-                    <p>All you need to nurture plants from seed to bloom</p>
-                </div>
-            </div>
 
-            <div class="feature">
-                <div class="feature-img-wrapper">
-                    <img src="pots.png" alt="Hand-Painted Pots">
+                <div class="feature teal-wash blob-3">
+                    <div class="feature-content">
+                        <h2>Painted Pots</h2>
+                        <p>Ceramics in pastel tones.</p>
+                    </div>
+                    <img src="hand painted pots.png" alt="Pots" class="bento-mini-img">
                 </div>
-                <div class="feature-content">
-                    <h2>Hand-Painted Pots</h2>
-                    <p>Unique ceramics in pastel tones, perfect for decorating.</p>
+
+                <div class="feature tall-wash blob-1">
+                    <div class="feature-content">
+                        <h2>Pressed Art</h2>
+                        <p>Everlasting petals framed in wood.</p>
+                    </div>
+                    <img src="pressed flower art.png" alt="Pressed Flowers" class="bento-mini-img">
+                </div>
+
+                <div class="feature seed-wash blob-2">
+                    <div class="feature-content">
+                        <h2>Seed Library</h2>
+                        <p>Rare wildflower blends.</p>
+                    </div>
+                    <img src="seed library.png" alt="Seed Library" class="bento-mini-img">
                 </div>
             </div>
         </section>
 
-        <section class="cta">
-            <div class="cta-container">
-                <button id="shop-now">Shop Now</button>
+        <section class="seasonal-bloom" id="seasonal-bloom">
+            <div class="bloom-container">
+                <div class="bloom-visual">
+                    <img src="rose.png" alt="Rose" class="floating-flower">
+                </div>
+                <div class="bloom-card">
+                    <span class="tag">Monthly Muse</span>
+                    <h3>The Crimson Heirloom</h3>
+                    <p>Inspired by the high sun of a midsummer garden. These roses are selected for their brilliant, light-catching petals and saturated edges, 
+                    acting as a living reminder of the energy and pulse found in nature’s quietest corners.</p>
+                    <button class="btn-outline">Reserve a Bloom</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+    <div class="about-paper-texture">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Quiet Garden began as a single, dusty corner in a sun-drenched painting studio. We believe that every flower is one of nature's own deliberate brushstrokes—a quiet masterpiece meant to bring sanctuary to the modern home.</p>
+            <p>What started as a personal collection of rare seedlings has grown into a curated gallery of botanical art. Our mission remains simple: to reconnect the urban soul with the slow, grounding rhythm of the earth, one leaf at a time.</p>
+            <img src="signature.png" alt="Founder's Signature" class="signature">
+        </div>
+    </div>
+    </section>
+
+        <section class="journal-section" id="journal">
+    <div class="section-header">
+        <h2>Field Journal</h2>
+        <p>Notes from the garden path</p>
+    </div>
+
+    <div class="journal-container">
+        <article class="journal-row">
+            <div class="journal-visual">
+                <div class="journal-img-tape tape-pink">
+                    <img src="The Morning Mist.png" alt="Morning Mist">
+                </div>
+            </div>
+            <div class="journal-text">
+                <span class="date">January 16</span>
+                <h4>The Morning Mist</h4>
+                <p>How the dew settles on the pink Japanese tree... it feels as though the garden is breathing in the silver light.</p>
+                <a href="#" class="read-note">View Entry —</a>
+            </div>
+        </article>
+
+        <article class="journal-row">
+            <div class="journal-visual">
+                <div class="journal-img-tape tape-teal">
+                    <img src="Mixing Teal Pigments.png" alt="Teal Pigments">
+                </div>
+            </div>
+            <div class="journal-text">
+                <span class="date">February 14</span>
+                <h4>Mixing Teal Pigments</h4>
+                <p>Finding the perfect shade for our ceramic collection. We found a stone by the creek that matched the sky exactly.</p>
+                <a href="#" class="read-note">View Entry —</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+        <section class="newsletter" id="newsletter">
+            <div class="newsletter-blob">
+                <h3>The Seedling Letter</h3>
+                <p>Receive a monthly "watercolor" digital wallpaper and garden tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Join the Peace</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="#" alt="Lucky Shrub logo">
-        </div>
-        <div class="footer-columns">
-            <ul>
-                <li>Contact</li>
-                <li>About</li>
-            </ul>
-            <p>Copyright goes here</p>
-        </div>
-    </footer>
+    <div class="footer-content">
+        <img src="footer-logo.png" alt="Quiet Garden" class="footer-logo-img">
+        <p>&copy; 2026. A quiet corner where the light hits the leaves.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
