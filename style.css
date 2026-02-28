@@ -180,7 +180,10 @@ body::before {
     box-shadow: 0 15px 40px rgba(216, 151, 170, 0.2);
 }
 
-.feature-content { position: relative; z-index: 2; }
+.feature-content { 
+    position: relative;
+    z-index: 2;
+    margin-bottom: auto;}
 
 .bento-item-large { 
     grid-area: large; 
@@ -197,11 +200,14 @@ body::before {
     grid-area: teal; 
     background: rgba(64, 224, 208, 0.08); 
     border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;
+    justify-content: space-between;
+    padding-top: 1.5rem;
 }
 .tall-wash { 
     grid-area: tall; 
     background: #fff; 
-    border-radius: 45% 55% 35% 65% / 60% 40% 60% 40%; 
+    border-radius: 45% 55% 35% 65% / 60% 40% 60% 40%;
+    padding-top: 1.5rem;
 }
 .seed-wash { 
     grid-area: seed; 
@@ -561,6 +567,32 @@ footer {
     opacity: 0.7;
     mix-blend-mode: multiply;
     filter: contrast(1.1);
+}
+
+/* Initial State: Hidden and slightly below position */
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(40px); 
+    transition: 
+        opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), 
+        transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+/* 2. Final State: Bring them back to their natural position */
+.reveal-hidden.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3. Fix for About Section: Forces your specific -0.8deg tilt back */
+.about-paper-texture.reveal-hidden.is-visible {
+    transform: translateY(0) rotate(-0.8deg) !important;
+}
+
+/* 4. Fix for Bento Hover: Ensures the 1.03x scale and 1deg tilt still work */
+.feature.is-visible:hover {
+    transform: scale(1.03) rotate(1deg) !important;
 }
 
 @media (max-width: 768px) {
