@@ -51,16 +51,6 @@ border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%;
 
 ---
 
-## Run it locally
-
-```bash
-git clone https://github.com/bytiagodev/quiet-garden-landing-page.git
-cd quiet-garden-landing-page
-# Open index.html in a browser. No server required.
-```
-
----
-
 <div align="center">
 
 **[Live Demo](https://bytiagodev.github.io/quiet-garden-landing-page/)** · **[bytiago.com](https://bytiago.com)**
