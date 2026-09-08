@@ -4,6 +4,10 @@
 
 </div>
 
+<p align="center">
+  <a href="https://bytiago.com/">🌐 <strong>bytiago.com</strong> &nbsp;•&nbsp; View my full portfolio</a>
+</p>
+
 ---
 
 ## The idea
@@ -40,8 +44,11 @@ The project is built with plain HTML5 and CSS3. The CSS relies heavily on `mix-b
 
 ---
 
+### More of my work
+If you enjoyed this project, check out my full portfolio and other experiments at [bytiago.com](https://bytiago.com/).
+
 <div align="center">
 
-**[Live Demo](https://bytiagodev.github.io/quiet-garden-landing-page/)** · **[bytiago.com](https://bytiago.com)**
+**[Live Demo](https://bytiagodev.github.io/quiet-garden-landing-page/)**
 
 </div>
