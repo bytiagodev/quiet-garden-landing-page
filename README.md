@@ -2,53 +2,44 @@
 
 ![Quiet Garden Banner](banner.svg)
 
+*A landing page for a flower shop that does not exist, built without a single photograph.*
+
+**[Open the page](https://bytiagodev.github.io/quiet-garden-landing-page/)**
+
 </div>
 
-<p align="center">
-  <a href="https://bytiago.com/">🌐 <strong>bytiago.com</strong> &nbsp;•&nbsp; View my full portfolio</a>
-</p>
+<br>
 
----
+### the constraint
 
-## The idea
+I wanted to build a landing page for a fictional flower shop called Quiet Garden, and I did not want stock photos anywhere in it. Instead of hunting for the right Unsplash images, I used watercolour illustrations for every visual on the page: the logo, the storefront, the products, the journal entries, even the founder's signature. The goal was a site that reads like a painted journal rather than a template, using HTML and CSS to do the work.
 
-I wanted to build a landing page for a fictional flower shop called Quiet Garden, but I didn't want to use standard stock photos. Instead of hunting for the right Unsplash images, I decided to use watercolour illustrations. The goal was to make the site feel like a painted journal using just HTML and CSS, rather than looking like a generic e-commerce template.
+### making paint stick to a web page
 
----
+Dropping an illustration onto a coloured card gives you a sticker with a hard edge. `mix-blend-mode: multiply` gives you paint. The white in the illustration drops away and the card's colour wash comes through the brushwork, so the image looks applied to the surface rather than placed on top of it. A fixed pseudo-element carries a handmade paper texture across the whole page at 20% opacity, which ties every section to the same sheet.
 
-## How the illustrations work
+### what the CSS is carrying
 
-Since the illustrations have transparent backgrounds, I used `mix-blend-mode: multiply` on the images. This makes the painted textures blend naturally into the background colours instead of looking like flat stickers placed on top of the page. I also added a subtle paper texture over the whole site using a fixed pseudo-element to tie everything together.
-
----
-
-## What the CSS is doing
-
-Most of the visual details are handled purely in CSS.
-
-**Blob shapes.** The product cards use a multi-value border-radius to get an organic, uneven shape. I didn't want to use SVGs or clip-path for this, so it is just standard CSS:
+**Blob shapes.** The product cards use a multi-value border-radius for an organic, uneven outline. No SVG, no clip-path, just:
 
 `border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%;`
 
-**Scroll animations.** Elements start slightly blurred and shifted down. A small IntersectionObserver script adds a class when they enter the viewport, and CSS handles the opacity and blur transitions to mimic watercolour spreading on paper.
+**Watercolour reveals.** Elements start blurred, shifted down and slightly scaled back. About twenty lines of IntersectionObserver add a class as they enter the viewport, and CSS clears the blur over 1.5s so they spread into focus rather than fade in.
 
-**Journal cards.** The blog images sit inside white padded cards that are rotated slightly. A `::before` pseudo-element creates a piece of pink or teal tape overlapping the top edge.
+**Journal cards.** The blog images sit in white padded cards rotated a couple of degrees off true. A `::before` pseudo-element makes a strip of pink or teal tape across the top edge.
 
-**The about section.** The main card in the about section is rotated by -0.8 degrees so it looks like a piece of paper resting on a desk, rather than being perfectly snapped to a grid.
+**The about section.** That card is rotated by -0.8 degrees, so it rests on the page like paper on a desk instead of snapping to the grid.
 
----
+### what it is made of
 
-## Stack
+Plain HTML5 and CSS3. Dancing Script from Google Fonts for the decorative headings, Palatino Linotype for the body, and nothing else loaded. No framework, no build step, no dependencies. The only JavaScript is the observer above.
 
-The project is built with plain HTML5 and CSS3. The CSS relies heavily on `mix-blend-mode`, multi-value border radius, radial gradients, and CSS Grid. The only JavaScript on the page is about 20 lines of IntersectionObserver for the scroll animations. For typography, I used Dancing Script from Google Fonts for the headings and a system serif font like Palatino Linotype for the body text. There are no frameworks and no build steps.
-
----
-
-### More of my work
-If you enjoyed this project, check out my full portfolio and other experiments at [bytiago.com](https://bytiago.com/).
+<br>
 
 <div align="center">
 
-**[Live Demo](https://bytiagodev.github.io/quiet-garden-landing-page/)**
+*A quiet corner where the light hits the leaves.*
+
+More work, and the projects that came after this one: [bytiago.com](https://bytiago.com/)
 
 </div>
