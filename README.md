@@ -40,6 +40,6 @@ Plain HTML5 and CSS3. Dancing Script from Google Fonts for the decorative headin
 
 *A quiet corner where the light hits the leaves.*
 
-More work, and the projects that came after this one: [bytiago.com](https://bytiago.com/)
+More work, and the projects that came after this one: [bytiago.com](https://bytiago.com/en/)
 
 </div>
