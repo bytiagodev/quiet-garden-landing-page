@@ -32,7 +32,7 @@ Dropping an illustration onto a coloured card gives you a sticker with a hard ed
 
 ### what it is made of
 
-Plain HTML5 and CSS3. Dancing Script from Google Fonts for the decorative headings, Palatino Linotype for the body, and nothing else loaded. No framework, no build step, no dependencies. The only JavaScript is the observer above.
+Plain HTML and CSS. The only JavaScript is the observer above, and the only thing loaded from elsewhere is one Google Font for the decorative headings.
 
 <br>
 
