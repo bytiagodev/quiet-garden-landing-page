@@ -37,6 +37,7 @@ body::before {
     align-items: center;
     position: relative;
     z-index: 10;
+    padding: 0 2rem;
 }
 
 .nav-links {
@@ -66,6 +67,7 @@ body::before {
     letter-spacing: 1.5px;
     color: #2d3436;
     text-decoration: none;
+    white-space: nowrap;
     transition: color 0.3s;
 }
 
@@ -263,7 +265,7 @@ body::before {
     text-align: left;
     max-width: 750px;
     border: 1px solid rgba(255,255,255,0.5);
-    flex-shrink: 0;
+    min-width: 0;
 }
 
 .tag {
@@ -282,7 +284,7 @@ body::before {
 }
 
 .floating-flower {
-    width: 350px;
+    width: min(350px, 28vw);
     animation: float 6s ease-in-out infinite;
     mix-blend-mode: multiply;
 }
@@ -632,6 +634,10 @@ footer {
     }
 
     .footer-logo-img { height: 70px !important; }
+
+    .bloom-container { gap: 2rem; }
+    .bloom-card { padding: 3rem 2.5rem; }
+    .bloom-card h3 { white-space: normal; }
 }
 
 @media (max-width: 768px) {
@@ -641,6 +647,8 @@ footer {
     .nav-links li a { font-size: 0.6rem; letter-spacing: 0.5px; }
 
     .bloom-container { flex-direction: column !important; align-items: center !important; width: 100%; }
+    .bloom-card { width: 100%; padding: 2.5rem 1.5rem; border-radius: 60px 20px 60px 20px; }
+    .bloom-card h3 { white-space: normal; font-size: 2rem; }
     .bloom-visual { display: block !important; order: -1 !important; width: 100%; text-align: center; }
     .floating-flower { 
         display: block !important; 
@@ -694,4 +702,11 @@ footer {
     .footer-content { flex-direction: row !important; gap: 0.5rem; justify-content: center; align-items: center; width: 100%; }
     .footer-logo-img { height: 35px !important; }
     .footer-content p { font-size: 0.65rem; white-space: normal; }
+}
+
+@media (min-width: 1025px) {
+    .nav-links { gap: clamp(0.6rem, 1.2vw, 1.5rem); }
+    .nav-links li:not(:last-child)::after { margin-left: clamp(0.6rem, 1.2vw, 1.5rem); }
+    .nav-links li a { font-size: clamp(0.7rem, 0.95vw, 0.9rem); letter-spacing: clamp(0.5px, 0.1vw, 1.5px); }
+    .logo img { height: clamp(90px, 10vw, 140px); margin: 0 clamp(1rem, 3vw, 3rem); }
 }
