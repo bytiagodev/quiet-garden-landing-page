@@ -757,6 +757,11 @@ footer {
     }
     .about-paper-texture { transform: rotate(0deg) !important; padding: 2rem 1.2rem !important; width: 100% !important; }
 
+    .journal-row, .journal-row:nth-child(even) { flex-direction: column; gap: 2rem; text-align: center; }
+    .journal-visual { width: 100%; }
+    .journal-img-tape { width: 85%; max-width: 300px; }
+    .journal-text h3 { font-size: 2rem; }
+
     .newsletter-blob { border-radius: 30px !important; width: 100% !important; padding: 2.5rem 1.2rem !important; }
     .newsletter-form { flex-direction: column; width: 100%; gap: 8px; }
     .newsletter-form input, .newsletter-form button { width: 100% !important; border-radius: 50px !important; padding: 0.8rem !important; }
