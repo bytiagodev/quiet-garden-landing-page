@@ -36,6 +36,8 @@ Dropping an illustration onto a coloured card gives you a sticker with a hard ed
 
 Plain HTML and CSS, with about thirty-five lines of JavaScript for the reveals and the newsletter form. The illustrations are WebP files sized to the layout and the paper texture is served from the repo, so the only thing loaded from elsewhere is one Google Font for the decorative headings.
 
+The paper texture is Handmade Paper by Le Marquis, from [Transparent Textures](https://www.transparenttextures.com/).
+
 <br>
 
 <div align="center">
