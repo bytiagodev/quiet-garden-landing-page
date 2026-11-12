@@ -24,7 +24,9 @@ Dropping an illustration onto a coloured card gives you a sticker with a hard ed
 
 `border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%;`
 
-**Watercolour reveals.** Elements start blurred, shifted down and slightly scaled back. About twenty lines of IntersectionObserver add a class as they enter the viewport, and CSS clears the blur over 1.5s so they spread into focus rather than fade in.
+**Watercolour reveals.** Elements start blurred, shifted down and slightly scaled back. An IntersectionObserver adds a class as they enter the viewport, and CSS clears the blur over 1.5s so they spread into focus rather than fade in. The hidden state only exists while scripts run, so with JavaScript off the whole page is there, and with reduced motion on everything appears at once.
+
+**The hero wash.** Two radial gradients, pink and teal, sit on a layer behind the hero, and a mask fades that layer out at the bottom, so the colour soaks away into the paper instead of stopping at a line.
 
 **Journal cards.** The blog images sit in white padded cards rotated a couple of degrees off true. A `::before` pseudo-element makes a strip of pink or teal tape across the top edge.
 
@@ -32,7 +34,7 @@ Dropping an illustration onto a coloured card gives you a sticker with a hard ed
 
 ### what it is made of
 
-Plain HTML and CSS. The only JavaScript is the observer above, and the only thing loaded from elsewhere is one Google Font for the decorative headings.
+Plain HTML and CSS, with about thirty-five lines of JavaScript for the reveals and the newsletter form. The illustrations are WebP files sized to the layout and the paper texture is served from the repo, so the only thing loaded from elsewhere is one Google Font for the decorative headings.
 
 <br>
 
