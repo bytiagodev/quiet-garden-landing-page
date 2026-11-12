@@ -12,6 +12,22 @@ img {
     height: auto;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #2d3436;
+    outline-offset: 3px;
+}
+
 body {
     background-color: #fcfaf7;
     color: #4a4a4a;
@@ -54,6 +70,7 @@ body::before {
 
 .nav-links li:not(:last-child)::after {
     content: "🍃";
+    content: "🍃" / "";
     margin-left: 1.5rem;
     color: #cbd5e0;
     font-size: 0.6rem;
@@ -103,7 +120,12 @@ body::before {
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.05));
 }
 
+.hero-content {
+    text-align: center;
+}
+
 .hero-title {
+    font-family: 'Dancing Script', cursive;
     font-size: clamp(4rem, 12vw, 6rem);
     color: #2d3436;
     margin-top: -2.5rem;
@@ -153,6 +175,7 @@ body::before {
 .subtitle {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
+    font-weight: 400;
     color: #ff69b4;
 }
 
@@ -190,6 +213,8 @@ body::before {
     position: relative;
     z-index: 2;
     margin-bottom: auto;}
+
+.feature h3 { font-size: 1.5em; }
 
 .bento-item-large { 
     grid-area: large; 
@@ -276,7 +301,7 @@ body::before {
     font-family: Verdana, sans-serif;
 }
 
-.bloom-card h3 {
+.bloom-card h2 {
     font-size: clamp(2.5rem, 4vw, 3.5rem); 
     margin: 1rem 0;
     font-weight: 400;
@@ -305,6 +330,9 @@ body::before {
     font-family: Verdana, sans-serif;
     font-size: 1rem;
     transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    line-height: normal;
 }
 
 .btn-outline:hover {
@@ -401,7 +429,7 @@ body::before {
     flex: 1.2;
 }
 
-.journal-text h4 {
+.journal-text h3 {
     font-size: 2.5rem;
     margin: 0.5rem 0;
     font-weight: 400;
@@ -415,7 +443,7 @@ body::before {
 }
 
 .date {
-    color: #ff69b4;
+    color: #c2377f;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -424,7 +452,7 @@ body::before {
 }
 
 .journal-row:nth-child(2) .date {
-    color: #40e0d0;
+    color: #147a72;
 }
 
 .read-note {
@@ -527,7 +555,24 @@ body::before {
     border-radius: 50px 0 0 50px;
     border: 1px solid #eee;
     width: 300px;
-    outline: none;
+}
+
+.newsletter-form input:focus-visible {
+    outline: 2px solid #2d3436;
+    outline-offset: 2px;
+}
+
+.newsletter-form[hidden] {
+    display: none;
+}
+
+.newsletter-blob h2 {
+    font-size: 1.17em;
+}
+
+.newsletter-note {
+    margin-top: 2.5rem;
+    font-style: italic;
 }
 
 .newsletter-form button {
@@ -562,7 +607,7 @@ footer {
     margin: 0;
     font-size: 0.95rem;
     font-style: italic;
-    color: #a0a0a0;
+    color: #666666;
     letter-spacing: 0.5px;
     white-space: nowrap; 
 }
@@ -643,7 +688,7 @@ footer {
 
     .bloom-container { gap: 2rem; }
     .bloom-card { padding: 3rem 2.5rem; }
-    .bloom-card h3 { white-space: normal; }
+    .bloom-card h2 { white-space: normal; }
 }
 
 @media (max-width: 768px) {
@@ -654,7 +699,7 @@ footer {
 
     .bloom-container { flex-direction: column !important; align-items: center !important; width: 100%; }
     .bloom-card { width: 100%; padding: 2.5rem 1.5rem; border-radius: 60px 20px 60px 20px; }
-    .bloom-card h3 { white-space: normal; font-size: 2rem; }
+    .bloom-card h2 { white-space: normal; font-size: 2rem; }
     .bloom-visual { display: block !important; order: -1 !important; width: 100%; text-align: center; }
     .floating-flower { 
         display: block !important; 
